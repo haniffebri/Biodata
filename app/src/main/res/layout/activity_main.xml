@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/circle_foto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/hanif"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@android:style/Widget.Holo.Light.TextView.SpinnerItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="Nama        : Hanif Febri Nugroho"
+        android:textSize="18dp"
+        android:layout_below="@id/circle_foto"
+     />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@android:style/Widget.Holo.Light.TextView.SpinnerItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:text="NIM           : A11.2020.12694"
+        android:textSize="18dp"
+      android:layout_below="@id/textView"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@android:style/Widget.Holo.Light.TextView.SpinnerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:text="Hobi          : Main Game, Ngoding, Nonton Film"
+        android:textSize="18dp"
+
+        android:layout_below="@id/textView2"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@android:style/Widget.Holo.Light.TextView.SpinnerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:text="Deskripsi  : Ini adalah biodata saya yang saya buat dengan Android Studio"
+        android:textSize="18dp"
+        android:layout_below="@id/textView3"/>
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:text="Telephon"
+        android:onClick="showPhone"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnPhone"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:id="@+id/btnMail"
+        android:onClick="sendMail"
+        android:layout_below="@id/textView4"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/btnPhone"
+        android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:onClick="showAddress"
+        android:layout_below="@id/textView4"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/btnMail"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+
+
+</RelativeLayout>
